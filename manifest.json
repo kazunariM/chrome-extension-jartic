@@ -1,0 +1,13 @@
+{
+    "name": "Jartic Extension",
+    "description": "Jarticのテキストをコピーする拡張機能",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+        {
+            "matches": [ "http://*/*", "https://*/*" ],
+            "js": ["get.js"]
+        }
+    ]
+}
